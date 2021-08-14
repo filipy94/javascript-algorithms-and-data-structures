@@ -1,3 +1,13 @@
+//Return true if the passed string looks like a valid US phone number.
+//Valid US phone-numbers
+//555-555-5555
+//(555)555-5555
+//(555) 555-5555
+//555 555 5555
+//5555555555
+//The area code is required.
+//If the country code is provided, you must confirm that the country code is 1.
+
 function telephoneCheck(str) {
     let regexLength = /\d/g;
     let numberLength = str.match(regexLength);
